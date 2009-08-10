@@ -1,7 +1,8 @@
 " vim:ft=vim:
 
 colorscheme blue    " set gui colorscheme to 'blue'
-set guioptions-=mT  " turn off menu and toolbar
+set guioptions-=m   " turn off menu
+set guioptions-=T   " turn off toolbar
 set mouse=a         " enable the mouse
 set mousehide       " hide the mouse around the cursor
 set guifont=Terminus\ 9
