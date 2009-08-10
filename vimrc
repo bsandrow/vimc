@@ -26,12 +26,7 @@ let perl_extended_vars=1
 
 " Keys
 " ----
-
 noremap Y       y$
-
-
-" ???
-" ---
 
 " Sometimes keys don't function with term type of 'screen'
 " so force it to recognize it as an xterm-compatible term
@@ -48,3 +43,5 @@ endif
 if &term =~ '*256*'
     set t_Co=256
 endif
+
+source ~/.vim/autocmd.vim
