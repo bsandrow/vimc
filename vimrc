@@ -28,7 +28,6 @@ let perl_extended_vars=1
 " ----
 
 noremap Y       y$
-map     <F4>    :call Fxxd()
 
 
 " ???
