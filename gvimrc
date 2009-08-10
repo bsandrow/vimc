@@ -1,8 +1,13 @@
 " vim:ft=vim:
 
-colorscheme blue
+colorscheme blue    " set gui colorscheme to 'blue'
+set guioptions-=mT  " turn off menu and toolbar
+set mouse=a         " enable the mouse
+set mousehide       " hide the mouse around the cursor
+set guifont=Terminus\ 9
 
-" Set Ctrl-s to 'save' when in Gvim
+" Keybindings
+" -----------
 inoremap    <c-s>   <c-o>:update<cr>
 vnoremap    <c-s>   <c-o>:update<cr>
 noremap     <c-s>   <c-o>:update<cr>
