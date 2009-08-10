@@ -1,3 +1,9 @@
+" Settings
+" --------
+set mouse=a
+
+" Keybindings
+" -----------
 map     <Esc>Oc     <S-Right>
 map     <Esc>Od     <S-Left>
 map     <Esc>]7~    <Home>

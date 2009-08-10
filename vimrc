@@ -40,7 +40,7 @@ if &term == "screen"
 endif
 
 if &term =~ '^rxvt-*'
-    set mouse=a
+    source '~/.vim/rxvt.vim'
 endif
 
 " Force 256 colors if we have a terminal-type that
