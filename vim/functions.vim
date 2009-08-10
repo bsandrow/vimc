@@ -4,18 +4,6 @@
 " License:  GPLv2
 " Desc:     my custom vim functions
 
-function LocalBracketMatchingKeysOn()
-    inoremap <buffer> { {}
-    inoremap <buffer> ( ()
-    inoremap <buffer> [ []
-endfunction
-
-function LocalBracketMatchingKeysOff()
-    inoremap <buffer> { {
-    inoremap <buffer> ( (
-    inoremap <buffer> [ [
-endfunction
-
 " ___HexMode___
 " source -- vim.wikia.com/wiki/Improved_Hex_editing
 function ToggleHex()
