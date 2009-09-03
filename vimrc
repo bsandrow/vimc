@@ -20,8 +20,8 @@ set ts=4 sts=4 sw=4 et nosta
 set foldenable foldmethod=indent foldlevel=100
 set laststatus=1
 
-let loaded_matchparen=1
-let perl_extended_vars=1
+let loaded_matchparen=1     " Don't load 'MatchParen'
+let perl_extended_vars=1    " Extended 'deep' matching for perl
 
 
 " Keys
