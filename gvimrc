@@ -12,3 +12,9 @@ set guifont=Terminus\ 9
 inoremap    <c-s>   <c-o>:update<cr>
 vnoremap    <c-s>   <c-o>:update<cr>
 noremap     <c-s>   <c-o>:update<cr>
+
+" Local Gui Settings
+" ------------------
+if filereadable(expand("$HOME/.vim/local-gui.vim"))
+    source ~/.vim/local-gui.vim
+endif

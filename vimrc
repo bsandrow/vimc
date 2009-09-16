@@ -45,3 +45,9 @@ if &term =~ '*256*'
 endif
 
 source ~/.vim/autocmd.vim
+
+" Local Settings
+" --------------
+if filereadable(expand("$HOME/.vim/local.vim"))
+    source ~/.vim/local.vim
+endif
