@@ -1,0 +1,31 @@
+Config
+======
+
+My Vim config.
+
+Archive
+=======
+
+    archive/syntax
+    --------------
+    Where I store useful syntax files that I normally wouldn't want in a
+    'general' configuration of my Vim.
+
+    archive/colors
+    --------------
+    Where I archive colorscheme files that I've come across, but currently
+    don't find useful.
+
+    archive/*
+    ---------
+    Everything else under archive/ is on a directory basis. Most are unused Vim
+    plugins that (in which case it's 1-per-directory) 
+
+
+Makefile
+========
+
+'install' is the only option. Installs to $HOME/ unless $PREFIX is redefined as
+such:
+
+    > PREFIX=/other/dir/ make install
