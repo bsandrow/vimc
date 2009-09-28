@@ -1,10 +1,10 @@
 " vim:ft=vim:
 
-colorscheme blue    " set gui colorscheme to 'blue'
-set guioptions-=m   " turn off menu
-set guioptions-=T   " turn off toolbar
-set mouse=a         " enable the mouse
-set mousehide       " hide the mouse around the cursor
+colorscheme darkblue " set gui colorscheme to 'blue'
+set guioptions-=m    " turn off menu
+set guioptions-=T    " turn off toolbar
+set mouse=a          " enable the mouse
+set mousehide        " hide the mouse around the cursor
 set guifont=Terminus\ 9
 
 " Keybindings
