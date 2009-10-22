@@ -12,6 +12,8 @@ set virtualedit=all             " i like being able to move the cursor all aroun
 set vb t_vb=                    " i hate visual/audible bells // turn on visualbell, and set the vb character to nothing
 set ruler                       " easier then using an election!
 
+syntax on
+
 " >>>> tabs >>>>
 set expandtab       " <Tab> inserts spaces instead of tabchar
 set tabstop=4       " display tabs as N spaces
@@ -24,16 +26,22 @@ let g:perl_include_pod=1
 let g:perl_fold=1
 let g:perl_string_as_statement=1
 
-" >>>> cool kids features >>>>
-syntax on
-filetype indent on
-filetype plugin on
+" >>>> Jacob's listchars >>>>
+set list
+set listchars=tab:»·,trail:·
+"set listchars=eol:$
 
 " >>>> MatchParen control >>>>
 let loaded_matchparen=1     " disable it
 
 " want Y to yank-to-eol like D is cut-to-eol
 noremap Y y$
+
+" >>>> autocmd stuff >>>>
+if has("autocmd")
+    filetype plugin on
+    filetype indent on
+endif
 
 " >>>> gvim >>>>
 if has("gui_running")
