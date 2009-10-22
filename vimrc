@@ -21,6 +21,12 @@ set tabstop=4       " display tabs as N spaces
 set shiftwidth=4    " used when indenting and shifting selections
 set softtabstop=4
 
+" >>>> java syntax control >>>>
+let g:java_space_errors=1
+let g:java_ignore_javadoc=1
+let g:java_highlight_functions=1
+let g:java_allow_cpp_keywords=0
+
 " >>>> perl syntax control >>>>
 let g:perl_extended_vars=1
 let g:perl_include_pod=1
