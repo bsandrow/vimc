@@ -32,8 +32,9 @@ set list
 set listchars=tab:»·,trail:·
 "set listchars=eol:$
 
-" >>>> MatchParen control >>>>
+" >>>> paren/bracket control >>>>
 let loaded_matchparen=1     " disable it
+set noshowmatch             " don't want to see matching p/b's as I'm typing
 
 " want Y to yank-to-eol like D is cut-to-eol
 noremap Y y$
