@@ -48,6 +48,10 @@ endif
 " >>>> gvim >>>>
 if has("gui_running")
     color asu1dark
+    set guifont=Terminus\ 9
+
+    " axe the toolbar
+    set guioptions-=T
 endif
 
 " >>>> local changes >>>>
