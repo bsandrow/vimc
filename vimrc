@@ -1,53 +1,49 @@
-" vim:ft=vim:
+"            +-------------+
+"------------| basic setup |
+"            +-------------+
 
-" Basic Settings
-" --------------
-set nocompatible
-set titlestring=%t%(\ [%R%M]%)
+set nocompatible                " disable old-vi compatability
+set backspace=indent,eol,start  " let backspace plow over everything
+set incsearch                   " we want to see the first match before actually searching
+set number                      " use line numbers
+set nowrap                      " only wrap lines when explicity told so
+set virtualedit=all             " i like being able to move the cursor all around
+"set titlestring=%t%(\ [%R%M]%)  " rename the title
+set vb t_vb=                    " i hate visual/audible bells // turn on visualbell, and set the vb character to nothing
+set ruler                       " easier then using an election!
+
+" >>>> tabs >>>>
+set expandtab       " <Tab> inserts spaces instead of tabchar
+set tabstop=4       " display tabs as N spaces
+set shiftwidth=4    " used when indenting and shifting selections
+set softtabstop=4
+
+" >>>> perl syntax control >>>>
+let g:perl_extended_vars=1
+let g:perl_include_pod=1
+let g:perl_fold=1
+let g:perl_string_as_statement=1
+
+" >>>> cool kids features >>>>
 syntax on
 filetype indent on
 filetype plugin on
-set history=100
-set vb t_vb=
-set backspace=indent,eol,start
-set number
-set incsearch
-set virtualedit=all
-set ww=b,s,h,l,[,],<,>
-set formatoptions=tcqrn
-set nowrap
-set ts=4 sts=4 sw=4 et nosta
-set foldenable foldmethod=indent foldlevel=100
-set laststatus=1
 
-let loaded_matchparen=1     " Don't load 'MatchParen'
-let perl_extended_vars=1    " Extended 'deep' matching for perl
+" >>>> MatchParen control >>>>
+let loaded_matchparen=1     " disable it
 
+" want Y to yank-to-eol like D is cut-to-eol
+noremap Y y$
 
-" Keys
-" ----
-noremap Y       y$
-
-" Sometimes keys don't function with term type of 'screen'
-" so force it to recognize it as an xterm-compatible term
-if &term == "screen"
-    set term=xterm
+" >>>> gvim >>>>
+if has("gui_running")
+    color asu1dark
 endif
 
-if &term =~ '^rxvt-*'
-    source '~/.vim/rxvt.vim'
+" >>>> local changes >>>>
+let g:localconf=expand("$HOME/.vim/local")
+if filereadable(g:localconf)
+    source g:localconf
 endif
 
-" Force 256 colors if we have a terminal-type that
-" probably supports it
-if &term =~ '*256*'
-    set t_Co=256
-endif
-
-source ~/.vim/autocmd.vim
-
-" Local Settings
-" --------------
-if filereadable(expand("$HOME/.vim/local.vim"))
-    source ~/.vim/local.vim
-endif
+"vim:ft=vim:
