@@ -33,6 +33,9 @@ let g:perl_include_pod=1
 let g:perl_fold=1
 let g:perl_string_as_statement=1
 
+" >>>> perl-support control >>>>
+let g:Perl_NoKeyMappings=0  " I'll enable the keybindings I want manually
+
 " >>>> Jacob's listchars >>>>
 set list
 set listchars=tab:»·,trail:·
