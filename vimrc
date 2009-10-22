@@ -11,6 +11,7 @@ set virtualedit=all             " i like being able to move the cursor all aroun
 "set titlestring=%t%(\ [%R%M]%)  " rename the title
 set vb t_vb=                    " i hate visual/audible bells // turn on visualbell, and set the vb character to nothing
 set ruler                       " easier then using an election!
+set hidden                      " allow unsaved buffers to be backgrounded
 
 syntax on
 
