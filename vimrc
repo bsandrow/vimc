@@ -64,9 +64,8 @@ if has("gui_running")
 endif
 
 " >>>> local changes >>>>
-let g:localconf=expand("$HOME/.vim/local")
-if filereadable(g:localconf)
-    source g:localconf
+if filereadable(expand("$HOME/.vim/local"))
+    source $HOME/.vim/local
 endif
 
 "vim:ft=vim:
